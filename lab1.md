@@ -1,2 +1,2 @@
-# ***LAB REPORT ONE***
+## ***LAB REPORT ONE***
 sample text 
