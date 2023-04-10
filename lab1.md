@@ -2,7 +2,7 @@
 **Part I: Installing VScode**
 
 In order to install Visual Studio Code (VScode), visit the website [here](https://code.visualstudio.com/) and make sure to obtain the appropriate download according to your operating system.
-![Image](vs code 1.png)
+![Image](vs-code-1.png)
 You should then be able to open Visual Studio on your computer. Happy coding! :D
 ![Image](vs code 2.png)
 
