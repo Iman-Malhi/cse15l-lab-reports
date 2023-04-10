@@ -8,12 +8,12 @@ You should then be able to open Visual Studio on your computer. Happy coding! :D
 
 **Part II: Remotely Connecting**
 
-Open a new terminal in VScode and enter 'ssh cs15lsp23zz@ieng6.ucsd.edu' into the terminal, but replace the 'zz' portion with your specific cse 15l account (which you can find by visiting [here] (https://sdacs.ucsd.edu/~icc/index.php). If asked if you want to keep connecting, enter yes, and make sure to enter your password as well when prompted. 
+Open a new terminal in VScode and enter 'ssh cs15lsp23zz@ieng6.ucsd.edu' into the terminal, but replace the 'zz' portion with your specific cse 15l account (which you can find by visiting [here] (https://sdacs.ucsd.edu/~icc/index.php)). If asked if you want to keep connecting, enter yes, and make sure to enter your password as well when prompted. 
 ![Image](1.png)
 I was able to login using the cs15lsp23zz@ieng6.ucsd.edu account given by the TA, since my own account (cs15lsp23mi@ieng6.ucsd.edu) gives the following error.
 ![Image](2.png)
 
 **Part III: Trying Some Commands**
 
-Ater remotely connecting, you should be able to practice using some commands. Try the following commands in the terminal: cd ~, cd, ls -lat, ls -a, ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username, cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/, and cat /home/linux/ieng6/cs15lsp23/public/hello.txt. Also try the commands cd, ls, pwd, mkdir, and cp in different ways to learn what these commands do.
+Ater remotely connecting, you should be able to practice using some commands. Try the following commands in the terminal: cd ~, cd, ls -lat, ls -a, ls <directory> (<directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc and abc is another group members' username), cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/, and cat /home/linux/ieng6/cs15lsp23/public/hello.txt. Also try the commands cd, ls, pwd, mkdir, and cp in different ways to learn what these commands do.
 ![Image](3.png)
