@@ -15,5 +15,5 @@ I was able to login using the cs15lsp23zz@ieng6.ucsd.edu account given by the TA
 
 **Part III: Trying Some Commands**
 
-Ater remotely connecting, you should be able to practice using some commands. Try the following commands in the terminal: cd ~, cd, ls -lat, ls -a, ls <directory> (<directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc and abc is another group members' username), cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/, and cat /home/linux/ieng6/cs15lsp23/public/hello.txt. Also try the commands cd, ls, pwd, mkdir, and cp in different ways to learn what these specific commands do.
+Ater remotely connecting, you should be able to practice using some commands. Try the following commands in the terminal: cd ~, cd, ls -lat, ls -a, cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/, and cat /home/linux/ieng6/cs15lsp23/public/hello.txt. Also try the commands cd, ls, pwd, mkdir, and cp in different ways to learn what these specific commands do.
 ![Image](3.png)
