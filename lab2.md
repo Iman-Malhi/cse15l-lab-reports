@@ -1,5 +1,49 @@
 # LAB REPORT 2
 ## PART I
+`import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+   
+    int num = 0;
+    String s;
+    public String handleRequest(URI url) {
+        // string server code
+        if (url.getPath().contains("/add-message")) {
+            // gets index of character '='in string
+            int x = url.getQuery().indexOf("=");
+            // adds substring beginning from character after "=" 
+            s += url.getRawQuery().substring(x+1,url.getRawQuery().length());
+            // creates new line
+            s += "\n";
+            // returns string
+            return s;
+        } else {
+            return "404 Not Found!";
+        }
+
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}`
+
+In this screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
+methods would be the url itself, `URI url`.
+
+Like the earlier screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
+methods would be the url itself, `URI url`.
+
 
 ## PART II
 A failure-inducing input for the method `reversed` would be
