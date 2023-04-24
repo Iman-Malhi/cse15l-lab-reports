@@ -40,12 +40,12 @@ class StringServer {
 }
 `
 
-In this screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
+In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
-![Image](lab2.1.png)
+![Image](lab2-1.png)
 Like the earlier screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
-![Image](lab2.2.png)
+![Image](lab2-2.png)
 ## PART II
 A failure-inducing input for the method `reversed` would be
 `
