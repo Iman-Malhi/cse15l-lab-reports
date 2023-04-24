@@ -1,7 +1,7 @@
 # LAB REPORT 2
 ## PART I
-`import java.io.IOException;`
-`import java.net.URI;`
+`import java.io.IOException;
+import java.net.URI;`
 
 `class Handler implements URLHandler {
    
@@ -23,9 +23,9 @@
         }
 
     }
-}
+}`
 
-class StringServer {
+`class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -46,14 +46,12 @@ methods would be the url itself, `URI url`.
 ![Image](lab2-2.png)
 ## PART II
 A failure-inducing input for the method `reversed` would be
-`
-@Test
+`@Test
   public void testReversed() {
     // test 1
     int[] input2 = {2,1,4};
     assertArrayEquals(new int[]{4,1,2}, ArrayExamples.reversed(input2));
-  }
-  `
+  }`
 ### PART III
 In the week 3 lab, I learned a lot about debugging and utilizing JUnit tests. Debugging is the process of finding errors in your code, and 
 removing said errors by editing the code. JUnit is a java library that is used run tests. In the lab, we used tests such as `assertArrayEquals` to test
