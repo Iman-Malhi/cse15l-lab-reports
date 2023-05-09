@@ -35,29 +35,27 @@ methods would be the url itself, `URI url`.
 
 ![Image](s1.png)
 
-Like the earlier screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
+Like the earlier screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
 
 ![Image](s2.png)
 
 ## PART II
-A failure-inducing input for the method `reversed` would be
-<pre><code>@Test
-  public void testReversed() {
-    // test 1
-    int[] input2 = {2,1,4};
-    assertArrayEquals(new int[]{4,1,2}, ArrayExamples.reversed(input2));
-  }</code></pre>
-  
-Here is the code for the method `reversed`:
-// Returns a *new* array with all the elements of the input array in reversed
-// order
+Here is the code for the method `reversed` which returns an array with the elements of the input array in reversed order:
 <pre><code>static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
+  }</code></pre>
+  
+A failure-inducing input for the method `reversed` would be
+<pre><code>@Test
+  public void testReversed() {
+    // test 1
+    int[] input2 = {2,1,4};
+    assertArrayEquals(new int[]{4,1,2}, ArrayExamples.reversed(input2));
   }</code></pre>
 ### PART III
 In the week 3 lab, I learned a lot about debugging and utilizing JUnit tests. Debugging is the process of finding errors in your code, and 
