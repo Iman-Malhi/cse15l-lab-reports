@@ -32,7 +32,7 @@ class StringServer {
 
 In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
-![Image](lab2-1.png)
+![Image](Screenshot from 2023-05-09 10-59-55.png)
 Like the earlier screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
 ![Image](lab2-2.png)
