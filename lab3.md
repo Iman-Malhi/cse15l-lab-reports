@@ -25,7 +25,7 @@ Example 2:
 ./technical/biomed/1468-6708-3-10.txt
 ./technical/biomed/1468-6708-3-3.txt
 ./technical/biomed/1468-6708-3-4.txt
-./technical/biomed/1468-6708-3-7.txt`
+./technical/biomed/1468-6708-3-7.txt`</code></pre>
 Then I used the `find -type` command.
 Example 1:
 `find -type d
@@ -41,7 +41,7 @@ Example 1:
 ./technical/government/Gen_Account_Office
 ./technical/government/Media
 ./technical/government/Post_Rate_Comm
-./technical/plos</code></pre>
+./technical/plos
 Example 2:
 `find -type f -empty`
 Then I used the `find -maxdepth` command.
