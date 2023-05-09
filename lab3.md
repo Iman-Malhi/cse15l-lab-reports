@@ -22,7 +22,7 @@ First, I used the `find -iname` command.
 ./technical/911report/chapter-8.txt
 ./technical/911report/chapter-9.txt`</code></pre>
 
-In the above example, `find -iname` does a partial search for files are of the format `chapter-*.txt`, the `*` can be replaced by any character(s) (some examples above would be `1`, `12`, and `9`. This command would be helpful for doing a non-exact search, where you want to find similarily named files instead of one exact file.
+In the above example, `find -iname` does a partial search for files are of the format `chapter-*.txt`, the `*` can be replaced by any character(s) (some examples above would be `1`, `12`, and `9`). This command would be helpful for doing a non-exact search, where you want to find similarily named files instead of one exact file.
 
 **Example 2:**
 <pre><code>find -iname "1468-6708-3-*.txt"
@@ -32,7 +32,7 @@ In the above example, `find -iname` does a partial search for files are of the f
 ./technical/biomed/1468-6708-3-4.txt
 ./technical/biomed/1468-6708-3-7.txt</code></pre>
 
-In the above example, `find -iname` does a partial search for files are of the format `1468-6708-3-*.txt`, the `*` can be replaced by any character(s) (some examples above would be `1`, `10`, and `7`. As stated earlier, the `find -iname` command would be helpful for doing a non-exact search, where you want to find similarily named files instead of one exact file.
+In the above example, `find -iname` does a partial search for files are of the format `1468-6708-3-*.txt`, the `*` can be replaced by any character(s) (some examples above would be `1`, `10`, and `7`). As stated earlier, the `find -iname` command would be helpful for doing a non-exact search, where you want to find similarily named files instead of one exact file.
 
 Then I used the `find -type` command.
 
