@@ -2,7 +2,7 @@
 Consider the command `find`.
 First, I used the `find -iname` command.
 Example 1:
-`find -iname "chapter-*.txt"
+<code><pre>find -iname "chapter-*.txt"
 ./technical/911report/chapter-1.txt
 ./technical/911report/chapter-10.txt
 ./technical/911report/chapter-11.txt
@@ -41,7 +41,7 @@ Example 1:
 ./technical/government/Gen_Account_Office
 ./technical/government/Media
 ./technical/government/Post_Rate_Comm
-./technical/plos`
+./technical/plos</code></pre>
 Example 2:
 `find -type f -empty`
 Then I used the `find -maxdepth` command.
