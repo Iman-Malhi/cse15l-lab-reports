@@ -67,7 +67,7 @@ Then I used the `find -maxdepth` command.
 ./lib
 ./technical</code></pre>
 
-`find -maxdepth 1 -type d` finds a limited amount of directories and returns them; specifically, `-maxdepth` makes the command return the number of searches equivalent to the max depth(not including the starting point). This command can be helpful for limiting the amount of searches `find` does.
+`find -maxdepth 1 -type d` finds a limited amount of directories and returns them; specifically, `-maxdepth` makes the command return the number of searches equivalent to the max depth (not including the starting point). This command can be helpful for limiting the amount of searches `find` does.
 
 **Example 2:**
 <pre><code>find -maxdepth 2 -type f 
