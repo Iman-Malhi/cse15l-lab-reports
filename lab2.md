@@ -32,18 +32,22 @@ class StringServer {
 
 In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
+
 ![Image](s1.png)
+
 Like the earlier screenshot, the method `handleRequest` in S`tringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
+
 ![Image](s2.png)
+
 ## PART II
 A failure-inducing input for the method `reversed` would be
-`@Test
+<pre><code>@Test
   public void testReversed() {
     // test 1
     int[] input2 = {2,1,4};
     assertArrayEquals(new int[]{4,1,2}, ArrayExamples.reversed(input2));
-  }`
+  }</code></pre>
 ### PART III
 In the week 3 lab, I learned a lot about debugging and utilizing JUnit tests. Debugging is the process of finding errors in your code, and 
 removing said errors by editing the code. JUnit is a java library that is used run tests. In the lab, we used tests such as `assertArrayEquals` to test
