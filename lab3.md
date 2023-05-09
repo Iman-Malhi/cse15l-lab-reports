@@ -1,8 +1,8 @@
 # LAB REPORT 3!
 Consider the command `find`.
 First, I used the `find -iname` command.
-Example 1:
-<code><pre>find -iname "chapter-*.txt"
+**Example 1:**
+<pre><code>find -iname "chapter-*.txt"
 ./technical/911report/chapter-1.txt
 ./technical/911report/chapter-10.txt
 ./technical/911report/chapter-11.txt
@@ -18,17 +18,17 @@ Example 1:
 ./technical/911report/chapter-6.txt
 ./technical/911report/chapter-7.txt
 ./technical/911report/chapter-8.txt
-./technical/911report/chapter-9.txt`
-Example 2:
-`find -iname "1468-6708-3-*.txt"
+./technical/911report/chapter-9.txt`</code></pre>
+**Example 2:**
+<pre><code>find -iname "1468-6708-3-*.txt"
 ./technical/biomed/1468-6708-3-1.txt
 ./technical/biomed/1468-6708-3-10.txt
 ./technical/biomed/1468-6708-3-3.txt
 ./technical/biomed/1468-6708-3-4.txt
-./technical/biomed/1468-6708-3-7.txt`</code></pre>
+./technical/biomed/1468-6708-3-7.txt</code></pre>
 Then I used the `find -type` command.
-Example 1:
-`find -type d
+**Example 1:**
+<pre><code>find -type d
 .
 ./lib
 ./technical
@@ -41,27 +41,27 @@ Example 1:
 ./technical/government/Gen_Account_Office
 ./technical/government/Media
 ./technical/government/Post_Rate_Comm
-./technical/plos
-Example 2:
-`find -type f -empty`
+./technical/plos</code></pre>
+**Example 2:**
+<pre><code>find -type f -empty</code></pre>
 Then I used the `find -maxdepth` command.
-Example 1: 
-`find -maxdepth 1 -type d
+**Example 1:**
+<pre><code>find -maxdepth 1 -type d
 .
 ./lib
-./technical`
-Example 2:
-`find -maxdepth 2 -type f 
+./technical</code></pre>
+**Example 2:**
+<pre><code>find -maxdepth 2 -type f 
 ./DocSearchServer.java
 ./README.md
 ./Server.java
 ./TestDocSearch.java
 ./lib/hamcrest-core-1.3.jar
-./lib/junit-4.13.2.jar`
+./lib/junit-4.13.2.jar</code></pre>
 And finally, I used the `find -ipath` command.
-Example 1:
-`find -ipath "*chapter-1.txt*"
-./technical/911report/chapter-1.txt`
-Example 2:
-find -ipath "*Annual_Fee.txt*"
-./technical/government/Media/Annual_Fee.txt
+**Example 1:**
+<pre><code>find -ipath "*chapter-1.txt*"
+./technical/911report/chapter-1.txt</code></pre>
+**Example 2:**
+<pre><code>find -ipath "*Annual_Fee.txt*"
+./technical/government/Media/Annual_Fee.txt</code></pre>
