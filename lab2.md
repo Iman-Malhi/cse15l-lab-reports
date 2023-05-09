@@ -7,7 +7,7 @@ class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
-    String s;
+    String s = "";
     public String handleRequest(URI url) {
         if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("=");
@@ -33,8 +33,7 @@ class StringServer {
 
         Server.start(port, new Handler());
     }
-}
-`
+}`
 
 In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
