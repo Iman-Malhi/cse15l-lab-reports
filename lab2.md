@@ -1,6 +1,6 @@
 # LAB REPORT 2
 ## PART I
-`import java.io.IOException;
+<pre><code>import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
@@ -28,7 +28,7 @@ class StringServer {
         int port = Integer.parseInt(args[0]);
         Server.start(port, new Handler());
     }
-}`
+}</code></pre>
 
 In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
