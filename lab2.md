@@ -1,31 +1,28 @@
 # LAB REPORT 2
 ## PART I
 `import java.io.IOException;
-import java.net.URI;`
+import java.net.URI;
 
-`class Handler implements URLHandler {
-   
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
     int num = 0;
     String s;
     public String handleRequest(URI url) {
-        // string server code
-        if (url.getPath().contains("/add-message")) {
-            // gets index of character '='in string
-            int x = url.getQuery().indexOf("=");
-            // adds substring beginning from character after "=" 
-            s += url.getRawQuery().substring(x+1,url.getRawQuery().length());
-            // creates new line
-            s += "\n";
-            // returns string
-            return s;
+        if (url.getPath().equals("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            s += parameters[1] + "\n";
+            return String.format(s, num);
+            
         } else {
+            
+            
             return "404 Not Found!";
         }
-
     }
-}`
+}
 
-`class StringServer {
+class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -36,7 +33,8 @@ import java.net.URI;`
 
         Server.start(port, new Handler());
     }
-}`
+}
+`
 
 In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
 methods would be the url itself, `URI url`.
