@@ -53,7 +53,6 @@ Here is the code for the method `reversed` which returns an array with the eleme
 A failure-inducing input for the method `reversed` would be:
 <pre><code>@Test
   public void testReversed() {
-    // test 1
     int[] input2 = {2,1,4};
     assertArrayEquals(new int[]{4,1,2}, ArrayExamples.reversed(input2));
   }</code></pre>
@@ -69,6 +68,14 @@ The symptom, as in the output of the above two tests are:
 
 Before and after the bug in the code is fixed:
 Before:
+<pre><code>static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }</code></pre>
+  
 After:
 ### PART III
 In the week 3 lab, I learned a lot about debugging and utilizing JUnit tests. Debugging is the process of finding errors in your code, and 
