@@ -50,13 +50,26 @@ Here is the code for the method `reversed` which returns an array with the eleme
     return arr;
   }</code></pre>
   
-A failure-inducing input for the method `reversed` would be
+A failure-inducing input for the method `reversed` would be:
 <pre><code>@Test
   public void testReversed() {
     // test 1
     int[] input2 = {2,1,4};
     assertArrayEquals(new int[]{4,1,2}, ArrayExamples.reversed(input2));
   }</code></pre>
+  
+An input that doesn't induce a failure would be:
+<pre><code>@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }</code></pre>
+
+The symptom, as in the output of the above two tests are:
+
+Before and after the bug in the code is fixed:
+Before:
+After:
 ### PART III
 In the week 3 lab, I learned a lot about debugging and utilizing JUnit tests. Debugging is the process of finding errors in your code, and 
 removing said errors by editing the code. JUnit is a java library that is used run tests. In the lab, we used tests such as `assertArrayEquals` to test
