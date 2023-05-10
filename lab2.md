@@ -66,9 +66,12 @@ An input that doesn't induce a failure would be:
 
 The symptom, as in the output of the above two tests are:
 
-Separately)
+Separately:
+![Image](13.png)
+![Image](14.png)
 
 Together:
+![Image](15.png)
 
 Before and after the bug in the code is fixed:
 
