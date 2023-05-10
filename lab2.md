@@ -66,7 +66,12 @@ An input that doesn't induce a failure would be:
 
 The symptom, as in the output of the above two tests are:
 
+Separately)
+
+Together:
+
 Before and after the bug in the code is fixed:
+
 Before:
 <pre><code>static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -84,6 +89,9 @@ After:
     }
     return newArray;
   }</code></pre>
+  
+To fix the method, `newArray` had to be returned, not `arr`. Additionally, in the for loop, `newArray`'s elements needed to be assigned to `arr`'s reversed elements, instead of the other way around. In other words, `arr[i] = newArray[arr.length - i - 1];` was replaced with `newArray[i] = arr[arr.length - i - 1];`.
+
 ### PART III
 In the week 3 lab, I learned a lot about debugging and utilizing JUnit tests. Debugging is the process of finding errors in your code, and 
 removing said errors by editing the code. JUnit is a java library that is used run tests. In the lab, we used tests such as `assertArrayEquals` to test
