@@ -30,13 +30,11 @@ class StringServer {
     }
 }</code></pre>
 
-In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
-methods would be the url itself, `URI url`.
+In this screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL (URI url) as an input (which in this case is "localhost:4008/add-message?s=hi"). In this method, serveral methods are called such as `getPath()` to get the path form the inputted URL, which in this the field value would be /add-message. Next, `getQuery()` is called to get the query portion of the inputted URL. s=hi would be the query of "localhost:4008/add-message?s=hi." String methods such as `.split()` and `.format()` are used to print the required string on the localhost website and take in the `String s` as its arguement.
 
 ![Image](s1.png)
 
-Like the earlier screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URL as an input. The relevant arguements to these
-methods would be the url itself, `URI url`.
+Like the earlier screenshot, the method `handleRequest` in `StringServer.java` is called to take in the URI url as an input. The fields change however, in this case the url value is "localhost:4008/add-message?s=how are you." The values for `getPath()` and `getQuery()` would be /add-message and s=how are you respectively. In other words, the url and query changes, but the path does not. The `String s` value also changes, and affects the `.split()` and `.format() methods. In the first image the `String s` value would end up as "hi\n", in the second it would be "hi\nhow are you\n".
 
 ![Image](s2.png)
 
