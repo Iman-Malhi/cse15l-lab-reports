@@ -13,11 +13,11 @@
 
 **Step 5:**
 
-![Image](1.1.jpg)
+![Image](1.1.png)
 
 **Step 6:**
 
-![Image](1.2.jpg)
+![Image](1.2.png)
 
 **Step 7:**
 
