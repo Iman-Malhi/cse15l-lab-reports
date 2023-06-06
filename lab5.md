@@ -12,20 +12,20 @@ grade.sh bash script will not run when testing student submission code. The expe
 (the github link in the terminal). 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working 
 directory, even the last few commands you ran. Do your best to provide as much context as you can.**
-The error and code for bug #1 is shown in the screenshot below.
+The error and code for bug #1 is shown in the screenshot below (files & directory structure shown):
 ![Screenshot1](screenshotA.png)
-The error and the code for bug #2 is shown in the screenshots below.
+The error and the code for bug #2 is shown in the screenshots below (files & directory structure shown):
 ![Screenshot2](screenshotD.png)
 ![Screenshot3](screenshotE.png)
 ### 2. TA Response: ###
 Hello! Both errors are similar in nature. Since both errors are error: cannot find symbol, both errors are a result of a mistype or a missing symbol/piece of 
-code. For the first bug, calling `reverseInPlace(input1);` is not enough. You have to call the class the method is from. Thus, the correct line of code would be
-`ArrayExamples.reverseInPlace(input1)`;. The JUnit Tests should pass when you fix this.
+code. What lines/pieces of code are missing and/or edited? What does $0 represent in the grade.sh script?
+### 3. Student Correction: ###
+I was able to correct both errors. For the first bug, calling `reverseInPlace(input1);` is not enough. I have to call the class the method is from. Thus, the correct line of code would be `ArrayExamples.reverseInPlace(input1)`;. The JUnit Tests should pass when this is fixed.
 For the second bug, the error lies in the `git clone $0 student-submission line`. It should be `git clone $1 student-submission`. This is because the 
 $0 referse to the name of the script and the $1 refers to the first argument in the terminal. We want the git clone to look at the githubstudent submission link, 
 so $1 is needed, not $0.
-### 3. Student Correction: ###
-I was able to correct both errors. To summarize a description for the bugs would be that bug #1 required a reference to the class in which the
+To summarize a description for the bugs would be that bug #1 required a reference to the class in which the
 reverseInPlace method was in, in order to run the JUnit tests and for bug #2 the grade.sh script should git clone $1 instead of $0 to look at the first 
 arguement in the terminal.
 The corrections are in the screenshots below.
