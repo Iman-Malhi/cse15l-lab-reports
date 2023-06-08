@@ -16,7 +16,7 @@ Entered vim mode by entering the command `vim tutor`. Entered `:!git clone https
   
 **Step 7:**
 
-`:e ListExamplesTests.java <delete> 2 (enter 2 to replace 1 in code shown below) <escape> :w`
+`:e ListExamplesTests.java <i> <delete> 2 (enter 2 to replace 1 in code shown below) <escape> :w`
 ![image](step6.png)
 
 **Step 8:**
