@@ -11,7 +11,7 @@ Entered vim mode by entering the command `vim tutor`. Entered `:!git clone https
 
 **Step 6:**
 
-`:!javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamples.java ListExamplesTests.java <enter> :!java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests <enter>` These commands compline and run the files.
+`:!javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamples.java ListExamplesTests.java <enter> :!java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests <enter>` These commands compile and run the files.
 ![image](step6b.png)
   
 **Step 7:**
@@ -21,7 +21,7 @@ Entered vim mode by entering the command `vim tutor`. Entered `:!git clone https
 
 **Step 8:**
 
-`:!javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamples.java ListExamplesTests.java <enter> :!java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests <enter>` These commands compline and run the files.
+`:!javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamples.java ListExamplesTests.java <enter> :!java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests <enter>` These commands compile and run the files.
 ![image](step7.png)
   
 **Step 9:**
